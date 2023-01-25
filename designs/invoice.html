@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Brymez Invoice</title>
+    <link rel="stylesheet" href="assets/css/invoice.css" />
+  </head>
+
+  <body>
+    <!-- Print Button -->
+    <div class="print-button-container">
+      <a href="javascript:window.print()" class="print-button">
+        Print this invoice
+      </a>
+    </div>
+
+    <!-- Invoice -->
+    <div id="invoice">
+      <!-- Header -->
+      <div class="row">
+        <div class="col-xl-6">
+          <div id="logo">
+            <img src="assets/img/brymez.jpeg" alt="Brymez Logo" />
+          </div>
+        </div>
+
+        <div class="col-xl-6">
+          <p id="details">
+            <strong>Order:</strong>
+            #00124
+            <br />
+            <strong>Issued:</strong>
+            20-08-2021
+            <br />
+            <strong>Valid Until:</strong>
+            20-08-2022
+          </p>
+        </div>
+      </div>
+
+      <!-- Client & Supplier -->
+      <div class="row">
+        <div class="col-xl-12">
+          <h2>Invoice</h2>
+        </div>
+
+        <!-- <div class="col-xl-5 text-center">
+          <strong class="margin-bottom-5">Chelsea FC</strong>
+        </div>
+        <div class="col-xl-2 text-center">VS</div>
+        <div class="col-xl-5 text-center">
+          <strong class="margin-bottom-5">Manchester United</strong>
+        </div> -->
+      </div>
+
+      <!-- Invoice -->
+      <div class="row">
+        <div class="col-xl-12">
+          <table class="margin-top-20">
+            <tr>
+              <th>Description</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+            </tr>
+
+            <tr>
+              <td>Manchester United vs Real Madrid</td>
+              <td>2</td>
+              <td>#500</td>
+              <td>#1,000</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="col-xl-4 col-xl-offset-8">
+          <table id="totals">
+            <tr>
+              <th>Total</th>
+              <th><span>#1,000</span></th>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="row">
+        <div class="col-xl-12">
+          <ul id="footer">
+            <li><span>www.brymezplace.com</span></li>
+            <li>hey@brymezplace.com</li>
+            <li>(234) 80000000000</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
